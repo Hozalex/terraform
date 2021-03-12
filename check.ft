@@ -1,0 +1,30 @@
+provider "checkpoint" {
+    server = "10.10.10.250"
+    shared_credentials_file = ".\creds
+    port = 4434
+}
+
+resource "checkpoint_management_network" "office_engineers" {
+  name         = "office_engineers"
+  subnet4      = "10.10.60.0"
+  mask_length4 = 24
+}
+
+resource "checkpoint_management_network" "mcplat" {
+  name         = "mcplat-net"
+  subnet4      = "10.0.20.0"
+  mask_length4 = 24
+
+}
+
+resource "checkpoint_management_network" "office_account" {
+  name         = "office_account"
+  subnet4      = "10.10.90.0"
+  mask_length4 = 24
+}
+
+resource "checkpoint_management_network" "office_wifi" {
+  name         = "office_wifi"
+  subnet4      = "10.10.70.0"
+  mask_length4 = 24
+}
