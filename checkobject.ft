@@ -1,3 +1,8 @@
+provider "checkpoint" {
+    server = "10.10.10.250"
+    shared_credentials_file = ".\creds
+    port = 4434
+}
 
 resource "checkpoint_management_host" "ts-dc-01" {
   name = "ts-dc-01"
