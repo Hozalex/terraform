@@ -1,0 +1,25 @@
+
+resource "checkpoint_management_host" "ts-dc-01" {
+  name = "ts-dc-01"
+  ipv4_address = "10.10.10.10"
+}
+
+resource "checkpoint_management_host" "ts-dc-02" {
+  name = "ts-dc-01"
+  ipv4_address = "10.10.10.11"
+}
+
+resource "checkpoint_management_host" "ts-app" {
+  name = "ts-app"
+  ipv4_address = "10.10.10.15"
+}
+
+resource "checkpoint_management_host" "ts-fs-01" {
+  name = "ts-fs-01"
+  ipv4_address = "10.10.10.18"
+}
+
+resource "checkpoint_management_host" "ts-fs-02" {
+  name = "ts-fs-02"
+  ipv4_address = "10.10.10.15"
+}
