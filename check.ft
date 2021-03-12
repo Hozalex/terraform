@@ -1,6 +1,6 @@
 provider "checkpoint" {
     server = "10.10.10.250"
-    shared_credentials_file = ".\creds
+    shared_credentials_file = "./creds"
     port = 4434
 }
 
